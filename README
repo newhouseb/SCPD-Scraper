@@ -1,0 +1,5 @@
+So you need two things installed, mplayer and podencoder, which can be installed via the following...
+
+sudo aptitude install lsdvd mplayer gpac zenity mencoder mplayer
+sudo wget http://diveintomark.org/public/2007/06/podencoder.txt -O /usr/local/bin/podencoder
+sudo chmod +x /usr/local/bin/podencoder
