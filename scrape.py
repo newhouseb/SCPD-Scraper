@@ -53,4 +53,4 @@ if __name__ == '__main__':
 
 	# Make a thread pool and download 5 files at a time
 	p = Pool(processes=5)
-	p.map_async(download, videos)
+	p.map(download, videos)
