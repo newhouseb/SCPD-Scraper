@@ -48,7 +48,7 @@ if __name__ == '__main__':
 		soup = BeautifulSoup(response.read())
 		video = soup.find('object', id='WMPlayer')['data']
 		video = re.sub("http","mms",video)
-		output_name = re.search(r"[a-z]+[0-9]+/[0-9]+",video).group(0).replace("/","_") + ".wmv"
+		output_name = re.search(r"[a-z]+[0-9]+[a-z]?/[0-9]+",video).group(0).replace("/","_") + ".wmv"
 		videos.append((video, output_name))
 
 	# Make a thread pool and download 5 files at a time
