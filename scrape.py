@@ -16,7 +16,7 @@ def download(work):
 	# Put it in a temp file
 	if os.system("mimms -c %s %s" % (work[0], "_" + work[1])) == 0:
 		# Move the file on success
-		os.system("mv %s %s", "_" + work[1], work[1])
+		os.system("mv %s %s" % ("_" + work[1], work[1]))
 	print "Finished", work
 
 if __name__ == '__main__':
